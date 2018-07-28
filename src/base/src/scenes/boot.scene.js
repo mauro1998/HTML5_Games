@@ -5,11 +5,7 @@
  * Starts SetupScene when finished.
  */
 
-import {
-  images,
-  spritesheets,
-  audios,
-} from '../assets';
+import ASSETS from '../../assets/data/assets.json';
 
 export default class BootScene extends Phaser.Scene {
   constructor() {
@@ -65,6 +61,7 @@ export default class BootScene extends Phaser.Scene {
   }
 
   preload() {
+    const { images, spritesheets, audios } = ASSETS;
     this.createProgressBar();
     this.loadImages(images);
     this.loadSpritesheets(spritesheets);

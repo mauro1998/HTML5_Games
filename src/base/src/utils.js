@@ -25,6 +25,7 @@ export function updatePropValues(obj, props) {
     'position',
     'origin',
     'scale',
+    'visible',
   ];
 
   Object.keys(props).filter(key => PROPS.indexOf(key) !== -1)

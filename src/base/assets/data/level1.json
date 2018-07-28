@@ -1,0 +1,48 @@
+{
+  "name": "Level 1",
+  "images": [
+    {
+      "name": "background",
+      "key": "img:background",
+      "position": [0, 0],
+      "origin": [0, 0]
+    },
+    {
+      "name": "inputKeys",
+      "key": "img:keys",
+      "position": [950, 10],
+      "origin": [1, 0],
+      "scale": 0.25,
+      "alpha": 0.5
+    }
+  ],
+  "sprites": [
+    {
+      "type": "group",
+      "name": "platforms",
+      "elements": [{
+        "key": "img:ground",
+        "name": "ground",
+        "position": [0, 630],
+        "origin": [0, 1],
+        "class": "Immovable"
+      }]
+    },
+    {
+      "type": "sprite",
+      "name": "door",
+      "key": "sp:door",
+      "position": [850, 513],
+      "origin": [0.5, 0.5],
+      "class": "Immovable"
+    },
+    {
+      "type": "sprite",
+      "name": "hero",
+      "key": "sp:hero",
+      "position": [100, 300],
+      "origin": [0.5, 0.5],
+      "class": "Hero"
+    }
+  ]
+}
